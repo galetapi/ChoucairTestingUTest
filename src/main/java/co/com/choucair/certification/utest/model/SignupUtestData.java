@@ -6,11 +6,8 @@ public class SignupUtestData {
     private String strLastName;
     private String strEmail;
     private String strMont;
-<<<<<<< HEAD
-=======
     private String strDay;
     private String strYear;
->>>>>>> 3c88124 (segunda version)
     private String strCity;
     private String strCodePostal;
     private String strSystemOperativeCom;
@@ -18,14 +15,11 @@ public class SignupUtestData {
     private String strLanguage;
     private String strMobileDevice;
     private String strModelCel;
-    private String strSystemOperativeCel;
     private String strPassword;
     private String strPasswordConfirm;
     private String strMessageConfirm;
 
 
-<<<<<<< HEAD
-=======
 
     public String getStrYear() {
         return strYear;
@@ -42,7 +36,7 @@ public class SignupUtestData {
     public void setStrDay(String strDay) {
         this.strDay = strDay;
     }
->>>>>>> 3c88124 (segunda version)
+
     public String getStrMont() {
         return strMont;
     }
@@ -130,14 +124,6 @@ public class SignupUtestData {
 
     public void setStrModelCel(String strModelCel) {
         this.strModelCel = strModelCel;
-    }
-
-    public String getStrSystemOperativeCel() {
-        return strSystemOperativeCel;
-    }
-
-    public void setStrSystemOperativeCel(String strSystemOperativeCel) {
-        this.strSystemOperativeCel = strSystemOperativeCel;
     }
 
     public String getStrPassword() {

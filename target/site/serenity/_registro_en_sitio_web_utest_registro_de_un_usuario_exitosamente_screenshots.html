@@ -1,0 +1,280 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--[if IE 7]>
+<!--<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">-->
+
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/v4-shims.min.css">
+
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" type="text/css" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.css">
+<link rel="stylesheet" type="text/css" href="chartist/dist/chartist.min.css">
+<script src="chartist/dist/chartist.min.js"></script>
+<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script>
+<!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.19/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.19/datatables.min.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.19/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.19/datatables.bootstrap4.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle">Demo Project using Serenity and Cucumber</span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="feature__cl_registro_en_sitio_web_utest.html">:Registro En Sitio Web Utest</a></span>
+                > <span class="truncate-60"><a
+                    href="_registro_en_sitio_web_utest_registro_de_un_usuario_exitosamente.html">Registro de un usuario exitosamente </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="requirement_type_feature.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 19-01-2022 13:19</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">:Registro En Sitio Web Utest </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                Como usuario quiero registrarme en el sitio web Utest
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="tag_historias.html">Historias
+                                    (tag)</a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="tag_registroexitoso.html">Registro Exitoso
+                                    (tag)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">Registro de un usuario exitosamente
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+    <div class="story-title">
+        <h3>Scenario:</h3>
+        <div class="scenario">Dado Que Daniel se encuentra posicionado en el sitio web Utest<br>Cuando Daniel se registra con sus datos<br><table class='embedded'><thead><th>strName</th><th>strLastName</th><th>strEmail</th><th>strMont</th><th>strDay</th><th>strYear</th><th>strCity</th><th>strCodePostal</th><th>strSystemOperativeCom</th><th>strVersion</th><th>strLanguage</th><th>strMobileDevice</th><th>strModelCel</th><th>strPassword</th><th>strPasswordConfirm</th></thead><tbody><tr><td>&lt;strName&gt;</td><td>&lt;strLastName&gt;</td><td>&lt;strEmail&gt;</td><td>&lt;strMont&gt;</td><td>&lt;strDay&gt;</td><td>&lt;strYear&gt;</td><td>&lt;strCity&gt;</td><td>&lt;strCodePostal&gt;</td><td>&lt;strSystemOperativeCom&gt;</td><td>&lt;strVersion&gt;</td><td>&lt;strLanguage&gt;</td><td>&lt;strMobileDevice&gt;</td><td>&lt;strModelCel&gt;</td><td>&lt;strPassword&gt;</td><td>&lt;strPasswordConfirm&gt;</td></tr></tbody></table><br>Entonces El sistema lo posiciona en la pagina Welcome y valida el mensaje<br><table class='embedded'><tbody><tr><td>strMessageConfirm</td></tr><tr><td>Welcome to the world's largest community of freelance software testers!</td></tr></tbody></table></div>
+    </div>
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="133600e3ad96d8e1ce30b697244baf00f52c85ac0cbe68ed81a2dbec33b31049.png" title=" Example: {strName=Daniel, strLastName=Galeano, strEmail=camilabcd12345@gmail.com, strMont=July, strDay=30, strYear=1994, strCity=Bello, strCodePostal=021xx, strSystemOperativeCom=Linux, strVersion=Linux Endless, strLanguage=English, strMobileDevice=Apple, strModelCel=iPhone 13 Pro Max, strPassword=Daniel123456789Daniel, strPasswordConfirm=Daniel123456789Daniel}" width="1024"/>
+                <img src="133600e3ad96d8e1ce30b697244baf00f52c85ac0cbe68ed81a2dbec33b31049.png" title=" Dado Que Daniel se encuentra posicionado en el sitio web Utest" width="1024"/>
+                <img src="133600e3ad96d8e1ce30b697244baf00f52c85ac0cbe68ed81a2dbec33b31049.png" title=" Daniel open url" width="1024"/>
+                <img src="133600e3ad96d8e1ce30b697244baf00f52c85ac0cbe68ed81a2dbec33b31049.png" title=" Daniel opens the Signup utest page" width="1024"/>
+                <img src="133600e3ad96d8e1ce30b697244baf00f52c85ac0cbe68ed81a2dbec33b31049.png" title=" Daniel open url (completed)" width="1024"/>
+                <img src="133600e3ad96d8e1ce30b697244baf00f52c85ac0cbe68ed81a2dbec33b31049.png" title=" Dado Que Daniel se encuentra posicionado en el sitio web Utest (completed)" width="1024"/>
+                <img src="dd2456a2c1f20d79e149d0d87aa6441cee98eb6600f9298bc455192c41e57205.png" title=" Cuando Daniel se registra con sus datos
+| strName | strLastName | strEmail | strMont | strDay | strYear | strCity | strCodePostal | strSystemOperativeCom | strVersion | strLanguage | strMobileDevice | strModelCel | strPassword | strPasswordConfirm |
+| Daniel | Galeano | camilabcd12345@gmail.com | July | 30 | 1994 | Bello | 021xx | Linux | Linux Endless | English | Apple | iPhone 13 Pro Max | Daniel123456789Daniel | Daniel123456789Daniel |" width="1024"/>
+                <img src="dd2456a2c1f20d79e149d0d87aa6441cee98eb6600f9298bc455192c41e57205.png" title=" Daniel set" width="1024"/>
+                <img src="dd2456a2c1f20d79e149d0d87aa6441cee98eb6600f9298bc455192c41e57205.png" title=" Daniel clicks on Este boton nos dirige al formulario de registro" width="1024"/>
+                <img src="22a6beb80e4c7bf3b3e01932548d82d73a37e97e4211c89205a47c8df85075ac.png" title=" Daniel enters 'Daniel' into Input para ingresar el nombre" width="1024"/>
+                <img src="8f9b124bf7482f87a0d1a582b972788b6341f9a48dac95a8362db2e6832e3099.png" title=" Daniel enters 'Galeano' into Input para ingresar el apellido" width="1024"/>
+                <img src="ef57ce4e6a75a4165734fcc5a3ee01a5f05599aac42c37364e32ccb471dd52b9.png" title=" Daniel enters 'camilabcd12345@gmail.com' into Input para ingresar el correo electronico" width="1024"/>
+                <img src="1fab19edf7755ef675da696ee5cde2851e4ada7f3ef7dd254c5ad9669585a7b4.png" title=" Daniel select July on Input para ingresar el mes" width="1024"/>
+                <img src="9dbbf93bc18e53e6d6b9fdc9290ce63511d845774a2708ddad57cbb7611d5fb1.png" title=" Daniel select 30 on Input para ingresar el dia" width="1024"/>
+                <img src="6838d79ad44d4d3eba31171db0192e49b086f7e7ef2b3e6d25262bce13fc9b9e.png" title=" Daniel select 1994 on Input para ingresar el a&Atilde;&plusmn;o" width="1024"/>
+                <img src="2899a08ba87602b2e71dbe2056a9d5916716d109ccfb8210d8e012cad20f192a.png" title=" Daniel clicks on Este boton nos dirige a la siguinte pagina" width="1024"/>
+                <img src="d7ee87e6493f650cd934188eb4340a4132860cdc106939be794c16414b200609.png" title=" Daniel esperar" width="1024"/>
+                <img src="a7841a98dea7a97399c275c856b0e9cb6230b5eff02bfda959670d82292e2691.png" title=" Daniel enters 'Bello' into Input para ingresar la ciudad" width="1024"/>
+                <img src="b3f361e4b07f229b007049bc8830dbe5d126a6a5fa483ea060d7ab4836db8cb2.png" title=" Daniel types 'DOWN' in Input para ingresar la ciudad" width="1024"/>
+                <img src="c5d322e58cc5383e5d4699d2261ec0ea5f9b5191e9dbed6c86c452576673ce3d.png" title=" Daniel types 'TAB' in Input para ingresar la ciudad" width="1024"/>
+                <img src="9d674eabd2d0c422f06d9b80a2c84c29fc720ae3d3e8695caf349525b466b80e.png" title=" Daniel clicks on Input para ingresar el codigo postal" width="1024"/>
+                <img src="d92bde962816c095fe1ad1a5bb51db51fa4fc52149b631d9da1796f938e2ec3b.png" title=" Daniel enters '021xx' into Input para ingresar el codigo postal" width="1024"/>
+                <img src="1ac5ebe22b482ced905fcd9913036f292f15bfe61575d84da5b14ddff92ff39c.png" title=" Daniel clicks on Este boton nos dirige a la siguinte pagina" width="1024"/>
+                <img src="6b29eac48133a447c1eceb25b87037dd7fd5c4310a21bf596b5b85d5d8f76320.png" title=" Daniel clicks on Input para ingresar el sistema operativo de tu computador" width="1024"/>
+                <img src="c0facd1937f5610d86f99719886fd950026055390fdb4b25ed860a0429b0e629.png" title=" Daniel enters 'Linux' into Esta es una opcion para seleccionar sistema operativo windows" width="1024"/>
+                <img src="0b18cf34aadb14211f86d550ccb2504f4e5c9276b3c6dab4432a229a184de223.png" title=" Daniel types 'TAB' in Esta es una opcion para seleccionar sistema operativo windows" width="1024"/>
+                <img src="d98a3762c4d57048af53e93b9b57910c1ec1457d33e07143c9b7f4b5fb6cd5e2.png" title=" Daniel clicks on Input para ingresar la version del sistema operativo del pc" width="1024"/>
+                <img src="5ecc6808f498af9ef8225efc0a94bf2fa5fc32d266c73860a1231b7d81d10eee.png" title=" Daniel enters 'Linux Endless' into Esta es una opcion para seleccionar la version de sistema operativo" width="1024"/>
+                <img src="347ab83110a8ac9e48745f084423c2c1911d75760149b827e4046f38b6b3bcce.png" title=" Daniel types 'TAB' in Esta es una opcion para seleccionar la version de sistema operativo" width="1024"/>
+                <img src="d5c5d1312f1dae965e4f40918362b8b496cff3fc2b6951f55a20387af6e67ab3.png" title=" Daniel clicks on Input para ingresar el lenguaje del sistema operativo" width="1024"/>
+                <img src="26913e39f73060cd9ab2fb57f47c99967f30729c9c0046e8f33ea9f99c224cba.png" title=" Daniel enters 'English' into Esta es una opcion para seleccionar el lenguaje del pc" width="1024"/>
+                <img src="f14dcc991377e73d426ee1e589933ddcda439e3429e12304a14c8fbcfd452418.png" title=" Daniel types 'TAB' in Esta es una opcion para seleccionar el lenguaje del pc" width="1024"/>
+                <img src="36b514fe0d1d356e1cdce53724f212b326c7fcd0572164a46e48be90faa33d3b.png" title=" Daniel clicks on Input para ingresar el dispositivo movil" width="1024"/>
+                <img src="ccc72076990cf2af2aba2776fd54c15fbec98382c15b2f2776081221c6c430d5.png" title=" Daniel enters 'Apple' into Esta es opcion para seleccionar el dispositivo movil" width="1024"/>
+                <img src="32537b190d2fdc4f23b1ff7deb9470084d983221220a507794aa9287c6d6d0bf.png" title=" Daniel types 'TAB' in Esta es opcion para seleccionar el dispositivo movil" width="1024"/>
+                <img src="9fb0fe3b9596c6524a25ec8b751201a3b8c80e4fb7a015653ea11081613703e4.png" title=" Daniel clicks on Input para ingresar el modelo del dispositivo movil" width="1024"/>
+                <img src="71c253a33a4da36030bd4829bf6381d68a5849d33b4372a9befba6834d1ae8aa.png" title=" Daniel enters 'iPhone 13 Pro Max' into Esta es una opcion para seleccionar el modelo del dispositivo movil" width="1024"/>
+                <img src="5849d2e096965170d06744c0529dc5b2d209714fecea1589945dbcea546be421.png" title=" Daniel types 'TAB' in Esta es una opcion para seleccionar el modelo del dispositivo movil" width="1024"/>
+                <img src="5f510634e274c6283772ef0416896accf97ff4876d7e9f71b1029b469e860026.png" title=" Daniel clicks on Input para ingresar el sistema operativo del dispositivo movil" width="1024"/>
+                <img src="9d25a33f7eb09d37e418813184f2d484ba3539afe50512357ce8364e0eae29b6.png" title=" Daniel clicks on Esta es una opcion para seleccionar el modelo del dispositivo movil" width="1024"/>
+                <img src="4906712373c6383de17cba70c7b6a32a6d7636722f925c886426d42b9ae78f1b.png" title=" Daniel clicks on Este boton nos dirige a la siguinte pagina" width="1024"/>
+                <img src="1a3e464d1bb243b5089bba3f08b2d36076e4888324489008415c4102d1d95b09.png" title=" Daniel enters 'Daniel123456789Daniel' into Input para ingresar la clave" width="1024"/>
+                <img src="aa0d82d6b6d38a90cf9912666a5fcb7156ef847a5e58d1083e80351547a435d9.png" title=" Daniel enters 'Daniel123456789Daniel' into Input para ingresar la confirmacion de la clave" width="1024"/>
+                <img src="7ad8d953a62b15337a1bea79fa9f77ad14238fa29e217531317b7e4158e238dc.png" title=" Daniel clicks on Este checklist es para confirmar el registro" width="1024"/>
+                <img src="b0e5b8d7ea4766256251a1061dd9d70e9bf40730d9e5b27a04f6e6edcc97fcb1.png" title=" Daniel clicks on Este checklist es para confirmar el registro" width="1024"/>
+                <img src="ce8be596c8a565ba442a7b6540d2872cf20593c8d8b464fcd3e206ba75e2e03f.png" title=" Daniel clicks on Este checklist es para confirmar el registro" width="1024"/>
+                <img src="1c7aa2991ad150bc2beea6a0bf9b5530de49e6c424929960f9decd58a33fac84.png" title=" Daniel clicks on Este boton es para confirmar el registro" width="1024"/>
+                <img src="29fd33e0c5595f013225ba2fd5baae30a84dca43b5e59ea11a41d27ecdfd857c.png" title=" Daniel esperar" width="1024"/>
+                <img src="29fd33e0c5595f013225ba2fd5baae30a84dca43b5e59ea11a41d27ecdfd857c.png" title=" Daniel set (completed)" width="1024"/>
+                <img src="29fd33e0c5595f013225ba2fd5baae30a84dca43b5e59ea11a41d27ecdfd857c.png" title=" Cuando Daniel se registra con sus datos
+| strName | strLastName | strEmail | strMont | strDay | strYear | strCity | strCodePostal | strSystemOperativeCom | strVersion | strLanguage | strMobileDevice | strModelCel | strPassword | strPasswordConfirm |
+| Daniel | Galeano | camilabcd12345@gmail.com | July | 30 | 1994 | Bello | 021xx | Linux | Linux Endless | English | Apple | iPhone 13 Pro Max | Daniel123456789Daniel | Daniel123456789Daniel | (completed)" width="1024"/>
+                <img src="29fd33e0c5595f013225ba2fd5baae30a84dca43b5e59ea11a41d27ecdfd857c.png" title=" Entonces El sistema lo posiciona en la pagina Welcome y valida el mensaje
+| strMessageConfirm |
+| Welcome to the world's largest community of freelance software testers! |" width="1024"/>
+                <img src="29fd33e0c5595f013225ba2fd5baae30a84dca43b5e59ea11a41d27ecdfd857c.png" title=" Then answer" width="1024"/>
+                <img src="29fd33e0c5595f013225ba2fd5baae30a84dca43b5e59ea11a41d27ecdfd857c.png" title=" Entonces El sistema lo posiciona en la pagina Welcome y valida el mensaje
+| strMessageConfirm |
+| Welcome to the world's largest community of freelance software testers! | (completed)" width="1024"/>
+                <img src="29fd33e0c5595f013225ba2fd5baae30a84dca43b5e59ea11a41d27ecdfd857c.png" title=" Example: {strName=Daniel, strLastName=Galeano, strEmail=camilabcd12345@gmail.com, strMont=July, strDay=30, strYear=1994, strCity=Bello, strCodePostal=021xx, strSystemOperativeCom=Linux, strVersion=Linux Endless, strLanguage=English, strMobileDevice=Apple, strModelCel=iPhone 13 Pro Max, strPassword=Daniel123456789Daniel, strPasswordConfirm=Daniel123456789Daniel} (completed): <span class='success-color'>SUCCESS</span>" width="1024"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 2.0.90</span>
+</div>
+</body>
+</html>
